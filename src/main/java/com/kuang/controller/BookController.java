@@ -2,6 +2,7 @@ package com.kuang.controller;
 
 import com.kuang.pojo.Books;
 import com.kuang.service.BookService;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -101,5 +102,9 @@ public class BookController {
         System.err.println(books);
         model.addAttribute("list",booksList);
         return "allBook";
+    }
+    @Test
+    public void test(){
+        System.out.println("user1 test");
     }
 }
