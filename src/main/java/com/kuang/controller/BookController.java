@@ -107,4 +107,8 @@ public class BookController {
     public void test(){
         System.out.println("master test");
     }
+    @Test
+    public void test2(){
+        System.out.println("user1 test");
+    }
 }
